@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/caracol.jpg">
+    <title>CARACOLES WEB</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <div id="change_theme">
+        <div id="to_green"></div>
+        <div id="to_red"></div>
+        <div id="to_blue"></div>
+    </div>
+    <main>
+        <header id="header">
+            <h1 id="logo">CARACOLES WEB</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="team.html">EQUIPO</a></li>
+                    <li><a href="about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slider">
+            <img src="../img/cielo.jpg" alt="">
+            <img src="../img/hojas.jpg" alt="">
+            <img src="../img/rojo.jpg" alt="">
+        </div>
+        <div id="content">
+            <section id="posts">
+                <article class="post">
+                    <h3>El Jardín digital</h3>
+                    <span class="date">24 de marzo de 2024</span>
+                    <p>Nuestro equipo de caracoles programadores creó un jardín digital único. Cada caracol contribuyó con su especialidad: uno diseñó las flores virtuales, otro se encargó de la irrigación automática, y un tercero implementó la inteligencia artificial para detectar plagas digitales. El resultado es un oasis virtual donde las flores crecen, se comunican entre sí y hasta comparten memes botánicos. Los clientes pueden visitar el jardín desde sus dispositivos y experimentar la belleza de la naturaleza en línea.</p>
+                    <a href="#" class="more">Leer más</a>
+                </article>
+                <article class="post">
+                    <h3>SnailMail 2.0</h3>
+                    <span class="date">24 de marzo de 2024</span>
+                    <p>¿Cansado de los correos electrónicos impersonales? Nuestro equipo de caracoles programadores revolucionó la comunicación digital con “SnailMail 2.0”. Estos caracoles virtuales se deslizan a través de los cables de fibra óptica para entregar mensajes de manera lenta pero segura. Los clientes pueden enviar cartas digitales con un toque personal, y nuestros caracoles garantizan que cada palabra llegue con la delicadeza de un caracol en un día soleado.</p>
+                    <a href="#" class="more">Leer más</a>
+                </article>
+                <article class="post">
+                    <h3>EscargotERP</h3>
+                    <span class="date">24 de marzo de 2024</span>
+                    <p>¿Necesitas un sistema de gestión empresarial ágil y eficiente? Nuestro equipo de caracoles programadores desarrolló “EscargotERP”. Este software es tan rápido como un caracol en una carrera de caracoles (lo cual no es muy rápido, pero es constante). Incluye módulos para contabilidad, inventario y recursos humanos. Además, tiene una función de “seguimiento de babas” para rastrear el progreso de los proyectos. Los clientes pueden confiar en que sus negocios avanzarán a paso seguro con EscargotERP.</p>
+                    <a href="#" class="more">Leer más</a>
+                </article>
+            </section>
+            <aside id="sidebar">
+                <h2>Nuestra filosofia</h2>
+                <figure>
+                    <img id="caracol" src="../img/caracol.jpg" alt="">
+                </figure>
+                <p>El caracol, lento pero meticuloso, simboliza la paciencia, detalle, adaptabilidad y resiliencia necesarias en el desarrollo web, un ecosistema colaborativo y en constante evolución.</p>
+                <h4>Contacto</h4>
+                <p id="contact"></p>
+                <button id='logout' class="hidden">Cerrar sesión</button>
+                <form action="" id="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="form_name" name="name">
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="submit" name="send" id="send">
+                </form>
+            </aside>
+        </div>
+        <footer>
+            <p>Carlos Jiménez Merchán &copy</p>
+            <a href="#" id="up">Ir arriba</a>
+        </footer>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+</html>

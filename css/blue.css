@@ -1,0 +1,19 @@
+body{
+    background:url('../img/cielo.jpg');
+}
+#logo{
+    background: #0003aa;
+}
+a:hover{
+    background: #0003aa;
+    transition-duration: .4s;
+}
+.more{
+    background: #0003aa;
+}
+#up{
+    background: #0003aa;
+}
+.ui-state-active{
+    background: #0003aa !important;
+}

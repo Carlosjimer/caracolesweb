@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/caracol.jpg">
+    <title>CARACOLES WEB</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+</head>
+<body>
+    <div id="change_theme">
+        <div id="to_green"></div>
+        <div id="to_red"></div>
+        <div id="to_blue"></div>
+    </div>
+    <main>
+        <header id="header">
+            <h1 id="logo">CARACOLES WEB</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="team.html">EQUIPO</a></li>
+                    <li><a href="about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section id="box">
+                <h3>Registro</h3>
+                <form action="" id="form_contact">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" placeholder="Nombre">
+                    <label for="second_name">Apellidos</label>
+                    <input type="text" name="second_name" placeholder="Apellidos">
+                    <label for="email">email</label>
+                    <input type="text" name="email" placeholder="ejemplo@ejemplo.com">
+                    <label for="birth">Fecha de nacimiento</label>
+                    <input type="text" name="birth" placeholder="YYYY/MM/DD">
+                    <input type="submit">
+                </form>
+            </section>
+            <aside id="sidebar">
+                <h4>Login</h4>
+                <p id="contact"></p>
+                <button id='logout' class="hidden">Cerrar sesión</button>
+                <form action="" id="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="form_name" name="name">
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="submit" name="send" id="send">
+                </form>
+            </aside>
+        </div>
+        <footer>
+            <p>Carlos Jiménez Merchán &copy</p>
+            <a href="#" id="up">Ir arriba</a>
+        </footer>
+    </main>
+    <script type="text/javascript" src="../js/contact.js"></script>
+    <script type="text/javascript" src="../js//jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</body>
+</html>

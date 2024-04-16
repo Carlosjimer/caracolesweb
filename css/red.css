@@ -1,0 +1,19 @@
+body{
+    background:url('../img/rojo.jpg');
+}
+#logo{
+    background: rgb(158, 0, 0);
+}
+a:hover{
+    background: rgb(158, 0, 0);
+    transition-duration: .4s;
+}
+.more{
+    background: rgb(158, 0, 0);
+}
+#up{
+    background: rgb(158, 0, 0);
+}
+.ui-state-active{
+    background: rgb(158, 0, 0) !important;
+}

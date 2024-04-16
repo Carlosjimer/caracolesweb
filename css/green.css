@@ -1,0 +1,19 @@
+body{
+    background:url('../img/hojas.jpg');
+}
+#logo{
+    background: #235E3D;
+}
+a:hover{
+    background: #235E3D;
+    transition-duration: .4s;
+}
+.more{
+    background: #235E3D;
+}
+#up{
+    background: #235E3D;
+}
+.ui-state-active{
+    background: #235E3D !important;
+}

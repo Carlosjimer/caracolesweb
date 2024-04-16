@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/caracol.jpg">
+    <title>CARACOLES WEB</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+</head>
+<body>
+    <div id="change_theme">
+        <div id="to_green"></div>
+        <div id="to_red"></div>
+        <div id="to_blue"></div>
+    </div>
+    <main>
+        <header id="header">
+            <h1 id="logo">CARACOLES WEB</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="team.html">EQUIPO</a></li>
+                    <li><a href="about.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <section id="box">
+                <h3>Nuestro equipo</h3>
+                <div id="galery">
+                    <div id="boss">
+                        <figure id="caracolardo">
+                            <img src="../img/caracolardo.jfif" alt="">
+                            <figcaption>Caracolardo (Cofundador y Gerente)</figcaption>
+                        </figure>
+                        <figure id="caracolberto">
+                            <img src="../img/caracolberto.jfif"" alt="">
+                            <figcaption>Caracolberto (Cofundador y Jefe de Desarrollo)</figcaption>
+                        </figure>
+                    </div>
+                    <div id="employee">
+                        <figure id="caracolia">
+                            <img src="../img/caracolia.jfif"" alt="">
+                            <figcaption>Caracolía (Administrativa)</figcaption>
+                        </figure>
+                        <figure id="caraclos">
+                            <img src="../img/caraclos.jfif"" alt="">
+                            <figcaption>Caraclos (Desarrollador Frontend)</figcaption>
+                        </figure>
+                        <figure id="caracolana">
+                            <img src="../img/caracolana.jfif"" alt="">
+                            <figcaption>Caracolana (Analista de Estilos)</figcaption>
+                        </figure>
+                        <figure id="caracolena">
+                            <img src="../img/caracolena.jfif"" alt="">
+                            <figcaption>Caracolena (Diseñadora UX/UI)</figcaption>
+                        </figure>
+                        <figure id="caracoluis">
+                            <img src="../img/caracoluis.jfif"" alt="">
+                            <figcaption>Caracoluis (Desarrollador Backend)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <aside id="sidebar">
+                <h4>Login</h4>
+                <p id="contact"></p>
+                <button id='logout' class="hidden">Cerrar sesión</button>
+                <form action="" id="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="form_name" name="name">
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email">
+                    <input type="submit" name="send" id="send">
+                </form>
+            </aside>
+        </div>
+        <footer>
+            <p>Carlos Jiménez Merchán &copy</p>
+            <a href="#" id="up">Ir arriba</a>
+        </footer>
+    </main>
+    <script type="text/javascript" src="../js/contact.js"></script>
+    <script type="text/javascript" src="../js//jquery-ui-1.13.2/jquery-ui.min.js"></script>
+</body>
+</html>
