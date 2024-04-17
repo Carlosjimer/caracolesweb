@@ -5,6 +5,7 @@
 body{
     background-attachment: fixed;
     font-family: 'Verdana','Arial';
+    width: 100%;
 }
 #change_theme{
     position: fixed;
@@ -63,9 +64,10 @@ main{
             display: flex;
             justify-content: space-evenly;
             list-style: none;
+            flex-wrap: wrap;
             li{
-                
-                a{line-height: 3em;
+                a{
+                    line-height: 3em;
                     text-decoration: none;
                     color: white;
                     padding: .85em;
@@ -83,10 +85,16 @@ main{
 }
 #content{
     display: flex;
+    flex-wrap: wrap;
     #posts, #box{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
+        min-width: 300px;
+        align-items: center;
+        h3{
+            margin-bottom: 1em;
+        }
         .post{
             padding: 0em 3em 1em 0;
             h3{
@@ -110,7 +118,7 @@ main{
         #accordion{
             padding: 1em 3em 1em 0;
         }
-    }    
+    }
     #sidebar{
         h2, h4{
             text-align: center;
@@ -131,6 +139,8 @@ main{
             font-size: 1.2em;
         }
         form{
+            display: flex;
+            flex-flow: column;
             input[type="text"],
             input[type="email"]{
                 padding: .2em;
@@ -139,6 +149,8 @@ main{
             input[type="submit"]{
                 padding: .3em;
                 cursor: pointer;
+                margin-bottom: .8em;
+                width: 4em;
             }
         }
         #logout{
@@ -165,6 +177,101 @@ footer{
 }
 #galery{
     width: 95%;
+    #boss{
+        display: flex;
+        flex-flow: column;
+    }
+    #employee{
+        display: flex;
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    /*#boss{
+        display: grid;
+        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1em;
+        width: 95%;
+        #caracolardo{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        #caracolberto{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        margin: 1em 0;
+    }
+    #employee{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+        width: 95%;
+        #caracolia{
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        #caraclos{
+            grid-area: 1 / 3 / 2 / 5;
+        }
+        #caracolana{
+            grid-area: 1 / 5 / 2 / 7;
+        }
+        #caracolena{
+            grid-area: 2 / 2 / 3 / 4;
+        }
+        #caracoluis{
+            grid-area: 2 / 4 / 3 / 6;
+        }
+        margin-bottom: 1em;
+    }*/
+    figure{
+        img{
+            width: 100%;
+            margin-bottom:em;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.05);
+                transition: 1s;
+            }
+        }
+        figcaption{
+            margin: 1em 0 2em 0;
+        }
+    }
+
+}
+#form_contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    input{
+        padding: .2em;
+        margin: 0 0 .8em 0 ;
+    }
+    label{
+        margin: 0 0 .2em 0;
+    }
+    input[type="submit"]{
+        padding: .3em;
+        cursor: pointer;
+        width: fit-content;
+    }
+    ::placeholder{
+        color: #c7c7c7;
+    }
+}
+#name-error, #second_name-error, #email-error, #birth-error{
+    color: red;
+    font-weight: bolder;
+}
+/*@media screen and (min-width: 480px){
+    #boss{
+        display: flex;
+        flex-flow: column;
+    }
+    #employee{
+        display: flex;
+        flex-flow: column;
+    }
     #boss{
         display: grid;
         grid-template-columns: repeat(1fr, 1fr);
@@ -202,43 +309,7 @@ footer{
         }
         margin-bottom: 1em;
     }
-    figure{
-        img{
-            width: 100%;
-            margin-bottom: .5em;
-            transition: 1s;
-            &:hover{
-                transform: scale(1.05);
-                transition: 1s;
-            }
-        }
-    }
-
-}
-#form_contact{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    input{
-        padding: .2em;
-        margin: 0 0 .8em 0 ;
-    }
-    label{
-        margin: 0 0 .2em 0;
-    }
-    input[type="submit"]{
-        padding: .3em;
-        cursor: pointer;
-        width: fit-content;
-    }
-    ::placeholder{
-        color: #c7c7c7;
-    }
-}
-#name-error, #second_name-error, #email-error, #birth-error{
-    color: red;
-    font-weight: bolder;
-}
+}*/
 .hidden{
     display: none;
 }
